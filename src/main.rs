@@ -22,6 +22,17 @@ enum Route {
     NotFound,
 }
 
+// fn root_route(routes: &RootRoute) -> Html {
+//     match routes {
+//         RootRoute::Home => html! { <p class="text-4xl">{ "Yew Template. " }</p> },
+//         RootRoute::Route =>
+//             html! {
+//             <Switch<Route> render={Switch::render(switch)} />
+//         },
+//     }
+// }
+
+
 fn root_route(routes: &RootRoute) -> Html {
     match routes {
         RootRoute::Home => html! {
@@ -29,8 +40,8 @@ fn root_route(routes: &RootRoute) -> Html {
             <div>
                 <p class="text-4xl">{ "Yew Template" }</p>
                 <ul>
-                    <li><RouterAnchor<Route> route=Route::About>{ "About" }</RouterAnchor<Route>></li>
-                    <li><RouterAnchor<Route> route=Route::NotFound>{ "Not Found" }</RouterAnchor<Route>></li>
+                    <li><RouterAnchor<Route> route={Route::About}>{ "About" }</RouterAnchor<Route>></li>
+                    <li><RouterAnchor<Route> route={Route::NotFound}>{ "Not Found" }</RouterAnchor<Route>></li>
                 </ul>
 
          },
@@ -40,7 +51,6 @@ fn root_route(routes: &RootRoute) -> Html {
         },
     }
 }
-
 fn switch(routes: &Route) -> Html {
     match routes {
         Route::About => html! { <p>{ "About" }</p> },
