@@ -2,23 +2,31 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./css/index.css ***!
   \*****************************************************************/
 
-
+body {
+    font-family: Courier, Monospace;
+    height: 100%vh;
+}
 /*!******************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./css/index.scss ***!
   \******************************************************************/
 html {
     background-color: #15191D;
     color: #DCDCDC;
+    height: 100%vh;
 }
 
 body {
     font-family: Courier, Monospace;
+    height: 100%vh;
 }
 
 /*!*****************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./css/main.scss ***!
   \*****************************************************************/
-
+body {
+    font-family: Courier, Monospace;
+    height: 100%vh;
+}
 /*!**********************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./css/tailwind/dist/tailwind.css ***!
   \**********************************************************************************/
@@ -542,3 +550,7 @@ video {
   line-height: 2.5rem;
 }
 
+body {
+  font-family: Courier, Monospace;
+  height: 100%vh;
+}
