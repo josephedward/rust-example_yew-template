@@ -7,25 +7,26 @@ use yew_router::prelude::*;
 
 #[derive(Clone, Routable, PartialEq)]
 enum RootRoute {
-    #[at("/yew-template-for-github-io/")]
+    #[at("/rust-example_yew-template/")]
     Home,
-    #[at("/yew-template-for-github-io/:s")]
+    #[at("/rust-example_yew-template/:s")]
     Route,
 }
 
 #[derive(Clone, Routable, PartialEq)]
 enum Route {
-    #[at("/yew-template-for-github-io/about")]
+    #[at("/rust-example_yew-template/about")]
     About,
     #[not_found]
-    #[at("/yew-template-for-github-io/404")]
+    #[at("/rust-example_yew-template/404")]
     NotFound,
 }
 
 fn root_route(routes: &RootRoute) -> Html {
     match routes {
         RootRoute::Home => html! { <p class="text-4xl">{ "Yew Template. " }</p> },
-        RootRoute::Route => html! {
+        RootRoute::Route =>
+            html! {
             <Switch<Route> render={Switch::render(switch)} />
         },
     }
@@ -68,7 +69,7 @@ fn app() -> Html {
     html! {
         // ********************************************************
         // **    basename is not supported on yew 0.19.0 yet.    **
-        // <BrowserRouter basename="/yew-template-for-github-io/">
+        // <BrowserRouter basename="/rust-example_yew-template/">
         //     <Switch<Route> render={Switch::render(switch)} />
         // </BrowserRouter>
         // ********************************************************
