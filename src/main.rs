@@ -27,7 +27,9 @@ fn root_route(routes: &RootRoute) -> Html {
     match routes {
         RootRoute::Home => html! { 
             //render an iframe
-            <iframe src="https://yew.rs/" width="100%" height="100%" />
+            <iframe src="https://josephedward.github.io/sci-fi_portfolio/" width="100vw" height="100vh" 
+            style="display:flex;"
+            />
          },
         RootRoute::Route =>
             html! {
