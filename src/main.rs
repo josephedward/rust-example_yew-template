@@ -34,9 +34,9 @@ fn root_route(routes: &RootRoute) -> Html {
             <div class="flex flex-col items-center justify-center h-screen">
                 <p class="text-4xl">{ "Yew Template" }</p>
                 <ul class="flex flex-col items-center justify-center">
-                    <li class="text-2xl"><a href="www.google.com">{"Google"}</a></li>
-                    <li class="text-2xl"><a href="www.github.com">{"GitHub"}</a></li>
-                    <li class="text-2xl"><a href="www.rust-lang.org">{"Rust"}</a></li>
+                    <li class="text-2xl"><a  target="_blank" href="www.google.com">{"Google"} </a></li>
+                    <li class="text-2xl"><a  target="_blank" href="www.github.com">{"GitHub"} </a></li>
+                    <li class="text-2xl"><a  target="_blank" href="www.rust-lang.org">{"Rust"}</a></li>
                 </ul>
             </div>
         
