@@ -30,12 +30,14 @@ fn root_route(routes: &RootRoute) -> Html {
             //render a list of BrowserRouter links
             <div>
                 <p class="text-4xl">{ "Yew Template" }</p>
-                <BrowserRouter>
-                    <ul>
-                        <li><a href="www.google.com">{"google"}</a></li>
+                <BrowserRouter
+                
+                >
+                    {"google"}
+                        <base href="www.google.com"/>
                         // <li><Link<Browser> route={Route::About}>{ "About" }</Link<Route>></li>
                         // <li><Link<Route> route={Route::NotFound}>{ "Not Found" }</Link<Route>></li>
-                    </ul>
+    
                 </BrowserRouter>
             </div>
 
