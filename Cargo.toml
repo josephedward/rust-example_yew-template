@@ -15,6 +15,7 @@ seed = "0.9.2"
 enclose = "1.1.8"
 indexmap = "1.9.2"
 uuid = "1.2.2"
+yew-hooks = "0.2.0"
 
 [dependencies.web-sys]
 version = "0.3.56"
