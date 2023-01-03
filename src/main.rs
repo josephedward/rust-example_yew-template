@@ -1,22 +1,8 @@
 
-#![allow(clippy::use_self)]
-
-use enclose::enc;
-use indexmap::IndexMap;
-use seed::{prelude::*, *};
-use serde::{Deserialize, Serialize};
-use std::mem;
-use uuid::Uuid;
-use web_sys::HtmlInputElement;
 use yew::prelude::*;
 use yew_router::prelude::*;
-
-const ENTER_KEY: u32 = 13;
-const ESC_KEY: u32 = 27;
-const STORAGE_KEY: &str = "seed-todomvc";
-
-type TodoId = Uuid;
-
+use yew_hooks::prelude::*;
+// use yew_hooks::use_counter;
 
 
 // ===================================================================================
@@ -40,11 +26,20 @@ enum Route {
     NotFound,
 }
 
+
 fn root_route(routes: &RootRoute) -> Html {
     match routes {
         RootRoute::Home => html! { 
-            //render an iframe
-            <iframe src="https://josephedward.github.io/sci-fi_portfolio/" width="100%vw" height="950px"  />
+            //render a list of external links
+            <div class="flex flex-col items-center justify-center h-screen">
+                <p class="text-4xl">{ "Yew Template" }</p>
+                <ul class="flex flex-col items-center justify-center">
+                    <li class="text-2xl"><a href="www.google.com">{"Google"}</a></li>
+                    <li class="text-2xl"><a href="www.github.com">{"GitHub"}</a></li>
+                    <li class="text-2xl"><a href="www.rust-lang.org">{"Rust"}</a></li>
+                </ul>
+            </div>
+        
          },
         RootRoute::Route =>
             html! {
