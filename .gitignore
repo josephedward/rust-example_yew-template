@@ -1,8 +1,2 @@
-target
-Cargo.lock
-
-dist
-
-**/node_modules
-**/package-lock.json
-misc
+/dist/
+/target/
