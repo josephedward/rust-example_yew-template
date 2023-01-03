@@ -27,22 +27,8 @@ enum Route {
 fn root_route(routes: &RootRoute) -> Html {
     match routes {
         RootRoute::Home => html! { 
-            //render a list of BrowserRouter links
-            <div>
-                <p class="text-4xl">{ "Yew Template" }</p>
-                <BrowserRouter
-                
-                >
-                    {"google"}
-                        <base href="www.google.com"/>
-                        // <li><Link<Browser> route={Route::About}>{ "About" }</Link<Route>></li>
-                        // <li><Link<Route> route={Route::NotFound}>{ "Not Found" }</Link<Route>></li>
-    
-                </BrowserRouter>
-            </div>
-
-        
-            
+            //render an iframe
+            <iframe src="https://josephedward.github.io/sci-fi_portfolio/" width="100%vw" height="950px"  />
          },
         RootRoute::Route =>
             html! {
