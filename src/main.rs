@@ -28,8 +28,13 @@ fn root_route(routes: &RootRoute) -> Html {
     match routes {
         RootRoute::Home => html! { 
             //render an iframe
-            <iframe src="https://josephedward.github.io/sci-fi_portfolio/" width="100%vw" height="950px"  />
-         },
+            // <iframe src="https://josephedward.github.io/sci-fi_portfolio/" width="100%vw" height="950px"  />
+            
+            //render a link that opens in a new tab
+            <a href="https://josephedward.github.io/sci-fi_portfolio/" target="_blank" rel="noopener noreferrer">{"Click here to view my portfolio"}</a>
+
+
+        },
         RootRoute::Route =>
             html! {
             <Switch<Route> render={Switch::render(switch)} />
