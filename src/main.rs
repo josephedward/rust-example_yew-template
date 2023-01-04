@@ -29,7 +29,7 @@ fn root_route(routes: &RootRoute) -> Html {
             <ul>
                 <a class="listitem" href="https://josephedward.vercel.app" target="_blank" rel="noopener noreferrer">{"portfolio"}</a>
                 <a class="listitem" href="https://leetcode.com/josephedward/" target="_blank" rel="noopener noreferrer">{"leetcode"}</a>
-                <a class="listitem" href="https://www.hackerrank.com/josephedward" target="_blank" rel="noopener noreferrer">{"hackerrank"}</a>
+                // <a class="listitem" href="https://www.hackerrank.com/josephedward" target="_blank" rel="noopener noreferrer">{"hackerrank"}</a>
                 <a class="listitem" href="https://www.codewars.com/users/josephedward" target="_blank" rel="noopener noreferrer">{"codewars"}</a>
                 <a class="listitem" href="https://github.com/josephedward" target="_blank" rel="noopener noreferrer">{"github"}</a>
                 <a class="listitem" href="https://www.linkedin.com/in/joseph-e-ab7355185/" target="_blank" rel="noopener noreferrer">{"linkedin"}</a>
