@@ -1,7 +1,5 @@
-
 use yew::prelude::*;
 use yew_router::prelude::*;
-
 
 // ===================================================================================
 // for {username}.github.io/{repo_name}
@@ -26,7 +24,8 @@ enum Route {
 
 fn root_route(routes: &RootRoute) -> Html {
     match routes {
-        RootRoute::Home => html! { 
+        RootRoute::Home =>
+            html! { 
             <ul>
                 <a class="listitem" href="https://josephedward.vercel.app" target="_blank" rel="noopener noreferrer">{"portfolio"}</a>
                 <a class="listitem" href="https://leetcode.com/josephedward/" target="_blank" rel="noopener noreferrer">{"leetcode"}</a>
@@ -49,8 +48,6 @@ fn root_route(routes: &RootRoute) -> Html {
     }
 }
 
-
-
 fn switch(routes: &Route) -> Html {
     match routes {
         Route::About => html! { <p>{ "About" }</p> },
@@ -58,40 +55,10 @@ fn switch(routes: &Route) -> Html {
     }
 }
 
-// ===================================================================================
-// for {username}.github.io
-
-// #[derive(Clone, Routable, PartialEq)]
-//  enum RootRoute {
-//      #[at("/")]
-//      Home,
-//      #[at("/about")]
-//      About,
-//      #[not_found]
-//      #[at("/404")]
-//      NotFound,
-//  }
-
-//  fn root_route(routes: &Route) -> Html {
-//      match routes {
-//          RootRoute::Home => html! { <p class="text-4xl">{ "Yew Template" }</p> },
-//          RootRoute::About => html! { <p>{ "About" }</p> },
-//          RootRoute::NotFound => html! { <p>{ "Not Found" }</p> },
-//      }
-//  }
-
-// ===================================================================================
-
 /// main root
 #[function_component(App)]
 fn app() -> Html {
     html! {
-        // ********************************************************
-        // **    basename is not supported on yew 0.19.0 yet.    **
-        // <BrowserRouter basename="/rust-example_yew-template/">
-        //     <Switch<Route> render={Switch::render(switch)} />
-        // </BrowserRouter>
-        // ********************************************************
         <BrowserRouter>
             <Switch<RootRoute> render={Switch::render(root_route)} />
         </BrowserRouter>
