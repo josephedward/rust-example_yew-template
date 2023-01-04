@@ -27,11 +27,33 @@ enum Route {
 fn root_route(routes: &RootRoute) -> Html {
     match routes {
         RootRoute::Home => html! { 
-            //render an iframe
-            // <iframe src="https://josephedward.github.io/sci-fi_portfolio/" width="100%vw" height="950px"  />
             
-            //render a link that opens in a new tab
-            <a href="https://josephedward.github.io/sci-fi_portfolio/" target="_blank" rel="noopener noreferrer">{"Click here to view my portfolio"}</a>
+            <ul>
+                <li class="listitem"> <a href="https://josephedward.vercel.app" target="_blank" rel="noopener noreferrer">{"Click here to view my portfolio"}</a></li>
+                //leetcode 
+                <li class="listitem"> <a href="https://leetcode.com/josephedward/" target="_blank" rel="noopener noreferrer">{"Click here to view my leetcode"}</a></li>
+                //hackerrank
+                <li class="listitem"> <a href="https://www.hackerrank.com/josephedward" target="_blank" rel="noopener noreferrer">{"Click here to view my hackerrank"}</a></li>
+                //codewars
+                <li class="listitem"> <a href="https://www.codewars.com/users/josephedward" target="_blank" rel="noopener noreferrer">{"Click here to view my codewars"}</a></li>
+                //github
+                <li class="listitem"> <a href="github.com/josephedward" target="_blank" rel="noopener noreferrer">{"Click here to view my github"}</a></li>
+                //linkedin
+                <li class="listitem"> <a href="https://www.linkedin.com/in/joseph-e-ab7355185/" target="_blank" rel="noopener noreferrer">{"Click here to view my linkedin"}</a></li>
+                //about.me
+                <li class="listitem"> <a href="https://about.me/joseph_edward" target="_blank" rel="noopener noreferrer">{"Click here to view my about.me"}</a></li>
+                //dev.to
+                <li class="listitem"> <a href="https://dev.to/josephedward" target="_blank" rel="noopener noreferrer">{"Click here to view my dev.to"}</a></li>
+                //youtube
+                <li class="listitem"> <a href="https://www.youtube.com/channel/UCthtlhbzBDgS8DneOYIVH5g" target="_blank" rel="noopener noreferrer">{"Click here to view my youtube"}</a></li>
+                //codepen
+                <li class="listitem"> <a href="https://codepen.io/josephedward" target="_blank" rel="noopener noreferrer">{"Click here to view my codepen"}</a></li>
+                //credly
+                <li class="listitem"> <a href="https://www.credly.com/users/joseph-edward.7a7a47e9/badges" target="_blank" rel="noopener noreferrer">{"Click here to view my credly"}</a></li>
+                //angel.co
+                <li class="listitem"> <a href="https://angel.co/u/josephedward01" target="_blank" rel="noopener noreferrer">{"Click here to view my angel.co"}</a></li>
+                
+            </ul>
 
 
         },

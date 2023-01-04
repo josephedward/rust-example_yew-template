@@ -3,3 +3,13 @@ body {
     font-family: Courier, Monospace;
     height: 100%vh;
 }
+
+.listitem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin:10%;
+    padding: 10%;
+    border-bottom: 1px solid #ccc;
+}
