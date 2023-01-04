@@ -12,9 +12,13 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin:10%;
-    padding: 10%;
-    border-bottom: 1px solid #ccc;
+    margin:5%;
+    padding: 5%;
+    border: 1px solid white;
+    background-color: darkgrey;
+    border-radius: 5px;
+    
+    
 }
 /*!******************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./css/index.scss ***!
